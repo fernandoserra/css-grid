@@ -1,0 +1,31 @@
+.container{
+    display: grid;
+    /*grid-template-columns: 35px 65px;*/
+    /*grid-template-rows: 35px 35px 75px;*/
+    grid-template-columns: repeat(2,35px);
+    grid-template-rows: repeat(4,35px);
+    grid-gap: 10px 10px;
+}
+.celda{
+    background-color: blueviolet;
+}
+.uno{
+    grid-column: 1;
+    grid-row: 1;
+}
+.dos{
+    grid-column: 2;
+    grid-row: 1;
+}
+.tres{
+    grid-column: 1;
+    grid-row: 2;
+}
+.cuatro{
+    grid-column: 2;
+    grid-row: 2;
+}
+.cinco{
+    grid-column: 1 / span 2;
+    grid-row: 3;
+}
